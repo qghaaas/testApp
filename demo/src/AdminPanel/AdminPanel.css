@@ -1,0 +1,91 @@
+.admin-panel {
+    min-height: 100vh;
+    background: #f4f6f8;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-panel h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #203a43;
+}
+
+.admin-panel h2 {
+    margin: 30px 0 15px;
+    color: #2c5364;
+    font-size: 22px;
+}
+
+/* Таблица */
+.admin-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.admin-panel thead {
+    background: #2c5364;
+    color: #fff;
+}
+
+.admin-panel th,
+.admin-panel td {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.admin-panel tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+.admin-panel tbody tr:hover {
+    background: #f0f4f7;
+}
+
+.admin-panel img {
+    border-radius: 4px;
+}
+
+/* Список туров */
+.admin-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-panel li {
+    background: #fff;
+    padding: 15px 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* Кнопки (на будущее) */
+.admin-btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.admin-btn.edit {
+    background: #ffc107;
+    color: #000;
+}
+
+.admin-btn.delete {
+    background: #dc3545;
+    color: #fff;
+}
