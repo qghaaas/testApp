@@ -485,6 +485,10 @@ html, body {
   padding: 4px 0;
 }
 
+.admin-forms option{
+  background-color: #0b0d12;
+}
+
 @media (max-width: 1100px) {
   .admin-layout {
     grid-template-columns: 1fr;

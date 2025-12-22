@@ -27,6 +27,11 @@ const NAV = [
   },
 ]
 
+const formatDate = (date) => {
+  if (!date) return '—';
+  return new Date(date).toLocaleDateString('ru-RU');
+};
+
 function formatNum(v) {
   const n = Number(v)
   if (Number.isNaN(n)) return '0'
@@ -641,7 +646,7 @@ export default function AdminPanel() {
                         <div className="muted">⭐ {o.hotel_stars_cached ?? '—'}</div>
                       </td>
                       <td>{o.departure_city_name}</td>
-                      <td>{o.start_date}</td>
+                      <td>{formatDate(o.start_date)}</td>
                       <td>{o.nights}</td>
                       <td>{o.meal_plan_code || '—'}</td>
                       <td>{formatNum(o.price)} {o.currency_code}</td>
