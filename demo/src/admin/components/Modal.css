@@ -1,0 +1,43 @@
+.m-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.35);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.m-card {
+  width: min(900px, 100%);
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 20px 60px rgba(0,0,0,.15);
+}
+
+.m-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.m-title { font-weight: 700; }
+.m-x {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.m-body { padding: 14px 16px; }
+.m-foot {
+  padding: 12px 16px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
